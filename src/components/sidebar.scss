@@ -1,9 +1,10 @@
 @use 'rtyras-design';
 
-.left-sidebar {
+.sidebar {
   background-color: #C6ACD8;
   vertical-align: top;
   display: flex;
-  flex: 0.2;
+  flex: 0 0 15%;
   flex-direction: column;
+  padding: 1.45rem 1.0875rem;
 }

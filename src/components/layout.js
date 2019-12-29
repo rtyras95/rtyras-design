@@ -35,12 +35,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <main> 
         <Left />
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          flex: 1,
-          overflow: 'scroll',
-        }}>
+        <div id="center">
         {children}
         </div>
         <Right />

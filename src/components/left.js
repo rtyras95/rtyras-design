@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import "./left.scss"
+import "./sidebar.scss"
 
 const Left = ({ children }) => (
-  <div className="left-sidebar">
+  <div className="sidebar" id="left">
   Test
     {children}
   </div>

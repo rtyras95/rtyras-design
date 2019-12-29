@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import './footer.scss'
 
 const Footer = () => (
   <footer
@@ -10,7 +11,6 @@ const Footer = () => (
   >
     <div
       style={{
-        marginLeft: `1.0875rem`,
         padding: `1.45rem 1.0875rem`,
         color: 'white',
       }}
