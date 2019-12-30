@@ -5,7 +5,6 @@ import "./sidebar.scss"
 
 const Right = ({ children }) => (
   <div className="sidebar" id="right">
-    Test
     {children}
   </div>
 )
