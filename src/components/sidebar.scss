@@ -1,7 +1,7 @@
-@use 'rtyras-design';
+@import 'rtyras-design';
 
 .sidebar {
-  background-color: #C6ACD8;
+  background-color: $secondary-color;
   vertical-align: top;
   display: flex;
   flex: 0 0 15%;

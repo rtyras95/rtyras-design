@@ -1,3 +1,5 @@
+@import 'rtyras-design';
+
 html, body {
   margin: 0;
   height: 100%;
@@ -9,6 +11,10 @@ html, body {
 
 #gatsby-focus-wrapper {
   height: 100%;
+}
+
+header {
+  background-color: $primary-color;
 }
 
 main {
@@ -25,6 +31,10 @@ main {
   flex: 1;
   overflow: scroll;
   padding: 1.45rem 1.0875rem;
+}
+
+footer {
+  background-color: $primary-color;
 }
 
 @media only screen and (max-width: 480px) {

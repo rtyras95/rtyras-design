@@ -4,11 +4,7 @@ import React from "react"
 import './footer.scss'
 
 const Footer = () => (
-  <footer
-    style={{
-      background: `rebeccapurple`,
-    }}
-  >
+  <footer>
     <div
       style={{
         padding: `1.45rem 1.0875rem`,
