@@ -5,7 +5,7 @@ import "./sidebar.scss"
 
 const Left = ({ children }) => (
   <div className="sidebar" id="left">
-    <Link to="/gallery/" className="nav-item" activeClassName="nav-item-active">
+    <Link to="/gallery/" className="nav-item top" activeClassName="nav-item-active">
       Gallery
     </Link>
     <Link to="/rachel/" className="nav-item" activeClassName="nav-item-active">
@@ -14,7 +14,7 @@ const Left = ({ children }) => (
     <Link to="/specs/" className="nav-item" activeClassName="nav-item-active">
         Specs
     </Link>
-    <Link to="/contact/" className="nav-item" activeClassName="nav-item-active">
+    <Link to="/contact/" className="nav-item bottom" activeClassName="nav-item-active">
         Contact
     </Link>
   </div>
