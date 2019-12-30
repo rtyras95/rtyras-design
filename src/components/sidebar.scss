@@ -6,5 +6,42 @@
   display: flex;
   flex: 0 0 15%;
   flex-direction: column;
-  padding: 1.45rem 1.0875rem;
+}
+
+.nav-item {
+  background-color: $gray-overlay;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.7rem 1.0875rem;
+  // border-color: $primary-color;
+  // border-bottom-style: solid;
+  // border-width: 1px;
+  margin: 0px;
+  margin-bottom: 2px;
+  color: white;
+}
+
+.nav-item:hover, .nav-item:active {
+  background-color: $white-overlay;
+  color: black;
+}
+
+.nav-item-active {
+  background-color: $white-overlay;
+  color: black;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .sidebar {
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .nav-item {
+    margin: 0px;
+    margin-right: 2px;
+    align-items: center;
+    flex: 0 0 25%;
+  }
 }
