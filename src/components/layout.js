@@ -15,7 +15,7 @@ import Right from "./right"
 import Footer from "./footer"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, rightChildren }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -36,9 +36,11 @@ const Layout = ({ children }) => {
       <main> 
         <Left />
         <div id="center">
-        {children}
+          {children}
         </div>
-        <Right />
+        <Right>
+          {rightChildren()} 
+        </Right>
       </main>
       <Footer/>
     </div>
@@ -47,6 +49,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  rightChilren: PropTypes.node,
 }
 
 export default Layout

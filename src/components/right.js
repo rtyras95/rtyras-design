@@ -9,8 +9,4 @@ const Right = ({ children }) => (
   </div>
 )
 
-Right.propTypes = {
-  children: PropTypes.node,
-}
-
 export default Right
