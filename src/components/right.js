@@ -9,4 +9,8 @@ const Right = ({ children }) => (
   </div>
 )
 
+Right.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
 export default Right
