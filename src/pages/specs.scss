@@ -18,6 +18,7 @@
 }
 
 .caption {
+  display: block;
   background: white;
   padding: 10px;
   border-radius: 10px;
@@ -30,4 +31,30 @@
 .caption.is-visible {
   opacity: 1;
   transform: translateX(0em);
+}
+
+.mobile-caption {
+  display: none;
+  opacity: 0;
+  transition: opacity .3s .25s ease-out;
+  margin-top: 20px;
+}
+
+.mobile-caption.is-visible {
+  diplay: none;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .inline-photo {
+    margin: auto;
+  }
+
+  .mobile-caption {
+    display: block;
+  }
+
+  .caption {
+    display: none;
+  }
 }

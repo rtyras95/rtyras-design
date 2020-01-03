@@ -17,7 +17,7 @@ export default class SpecsPage extends React.Component {
   render() {
     const right = 
       <div className={this.state.rightClass}>
-        <p>Pizza</p>
+        <p>{this.state.caption}</p>
       </div>
 
     return (
@@ -41,15 +41,16 @@ export default class SpecsPage extends React.Component {
           minTopValue={10}
           onChange={(isVisible) => {
             if(isVisible){
-              this.setState({imgClass: 'inline-photo is-visible', rightClass: 'caption is-visible'})
+              this.setState({imgClass: 'inline-photo is-visible', rightClass: 'caption is-visible', mobileClass: 'mobile-caption is-visible', caption: 'Pizza'})
             } else {
-              this.setState({imgClass: 'inline-photo', rightClass: 'caption'})
+              this.setState({imgClass: 'inline-photo', rightClass: 'caption', mobileClass: 'mobile-caption', caption: null})
             }
             
           }}
         >
           <img src="https://cssanimation.rocks/levelup/public/03/02-end/images/pizza2.jpg" className={this.state.imgClass}/>
         </VizSensor>
+        <p className={this.state.mobileClass}>Pizza</p>
       </Layout>
     )
   }
