@@ -13,18 +13,15 @@ export default class SpecsPage extends React.Component {
       rightClass: 'caption',
     }
   }
-
-  rightComponent = () => {
-    return (
+  
+  render() {
+    const right = 
       <div className={this.state.rightClass}>
         <p>Pizza</p>
       </div>
-    )
-  }
-  
-  render() {
+
     return (
-      <Layout rightChildren={this.rightComponent}>
+      <Layout rightChildren={right}>
         <SEO title="Specs" />
         <h1>Building this Site</h1>
         <br/>

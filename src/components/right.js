@@ -10,7 +10,7 @@ const Right = ({ children }) => (
 )
 
 Right.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
 
 export default Right

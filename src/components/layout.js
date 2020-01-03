@@ -39,7 +39,7 @@ const Layout = ({ children, rightChildren }) => {
           {children}
         </div>
         <Right>
-          {rightChildren()} 
+          {rightChildren} 
         </Right>
       </main>
       <Footer/>
@@ -49,7 +49,7 @@ const Layout = ({ children, rightChildren }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  rightChildren: PropTypes.func,
+  rightChildren: PropTypes.node,
 }
 
 export default Layout
